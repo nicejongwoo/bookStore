@@ -3,14 +3,13 @@ package com.code.bookStore.model;
 import com.sun.istack.NotNull;
 
 import javax.persistence.*;
-import java.util.UUID;
 
 @Entity
 public class Book {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO, generator = "UUID")
-    private UUID id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     @Column
     @NotNull
