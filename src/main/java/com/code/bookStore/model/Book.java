@@ -1,10 +1,16 @@
 package com.code.bookStore.model;
 
 import com.sun.istack.NotNull;
+import lombok.*;
 
 import javax.persistence.*;
 
 @Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@ToString
+@Data
 public class Book {
 
     @Id

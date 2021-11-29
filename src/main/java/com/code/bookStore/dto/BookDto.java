@@ -1,16 +1,18 @@
 package com.code.bookStore.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.code.bookStore.model.Book;
+import lombok.*;
 
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 public class BookDto {
 
+    private Long id;
     private String title;
+    private String description;
+    private int releaseYear;
 
 }
